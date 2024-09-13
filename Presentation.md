@@ -1,18 +1,20 @@
 ---
-author: Angelo Basile
-title: Reveal.js+GitHubPages+Pandoc
-date: June 21, 2017
+title: "Medical Report Generation"
 ---
-# Reveal rocks
 
-Some code
+<!-- .slide: data-transition="zoom" -->
 
+## <span style="color:#2196F3; animation: fadeIn 2s;">Medical Report Generation</span>
 
-```python
-       print("hello world")
-```
+<p style="font-size: 1.2em;">An automated process using AI techniques to generate detailed medical reports from medical images, enhancing accuracy and reducing workload.</p>
 
-# Slide 2
-
-* test
-* test
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
