@@ -11,11 +11,60 @@
     font-family: 'Nerko One', cursive;
   }
   
-.reveal h1 {
+.reveal h1{
+    font-family: 'Nerko One', cursive;
+  }
+.reveal h2 {
     font-family: 'Nerko One', cursive;
   }
   
+  .reveal h3 {
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .reveal h4 {
+    font-family: 'Nerko One', cursive;
+  }
+  
+/* Style for the dataset description paragraph */
+.dataset-description {
+    color: #d6ff33; /* Change to your desired color */
+}
+
+/* Style for the training description paragraph */
+.training-description {
+    color: #0e729d; /* Change to your desired color */
+}
+
+/* Style for the metric description paragraph */
+.metric-description {
+    color: #d50ef4; /* Change to your desired color */
+}
+
 
 .make-it-pop {
     filter: drop-shadow(0 0 20px rgb(2, 226, 247)); /* Larger shadow */
   }
+
+/* Style for the image container */
+.image-container {
+    text-align: center;
+    width: 600px; /* Increase the width of the rounded box */
+    height: 400px; /* Increase the height of the rounded box */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure the image stays within the box */
+    display: flex; /* Center the image */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddfd3b; /* Optional border for better visibility */
+    margin: auto; /* Center the container horizontally */
+    background-color: #faf0a2;
+}
+
+/* Style for images within the container */
+.image-container img {
+    width: 100%; /* Make the image fit the container width */
+    height: auto; /* Make the image fit the container height */
+    object-fit: cover; /* Ensure the image covers the container */
+    display: block; /* Remove extra space below the image */
+}
