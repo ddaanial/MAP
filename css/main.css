@@ -68,3 +68,22 @@
     object-fit: cover; /* Ensure the image covers the container */
     display: block; /* Remove extra space below the image */
 }
+
+
+
+
+/* Style for the glow effect */
+h1 {
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glow effect */
+    /* Optional for additional glow effects */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Ensure the glow effect applies to the section */
+section[data-state="make-it-pop"] h1 {
+    color: #ffffff; /* Ensure text color is set for consistency */
+    text-shadow: 0 0 20px rgba(0, 226, 247, 0.8); /* Adjust glow effect */
+    /* Optional */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+}
