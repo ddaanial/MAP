@@ -42,8 +42,11 @@
 }
 
 
-.make-it-pop {
+.make-it-pop-blue {
     filter: drop-shadow(0 0 20px rgb(2, 226, 247)); /* Larger shadow */
+  }
+  .make-it-pop-red{
+    filter: drop-shadow(0 0 20px rgb(247, 2, 51)); /* Larger shadow */
   }
 
 /* Style for the image container */
@@ -73,7 +76,7 @@
 
 
 /* Style for the glow effect on h1 within Reveal.js */
-.reveal section[data-state="make-it-pop"] h1 {
+.reveal section[data-state="make-it-pop-blue"] h1 {
     color: #ffffff; /* Text color */
     text-shadow: 0 0 20px rgba(0, 226, 247, 0.8); /* Glow effect */
     /* Optional for additional glow effects */
@@ -81,7 +84,22 @@
 }
 
 /* Ensure the section has proper styling */
-.reveal section[data-state="make-it-pop"] {
+.reveal section[data-state="make-it-pop-blue"] {
     /* Ensure the section doesn't interfere with the glow effect */
     background: none; /* Remove background if it affects visibility */
 }
+
+/* Style for the glow effect on h1 within Reveal.js */
+.reveal section[data-state="make-it-pop-red"] h2 {
+    color: #ffffff; /* Text color */
+    text-shadow: 0 0 20px rgba(0, 226, 247, 0.8); /* Glow effect */
+    /* Optional for additional glow effects */
+    transition: text-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Ensure the section has proper styling */
+.reveal section[data-state="make-it-pop-red"] {
+    /* Ensure the section doesn't interfere with the glow effect */
+    background: none; /* Remove background if it affects visibility */
+}
+

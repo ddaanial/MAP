@@ -20,7 +20,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <section data-state="make-it-pop">
+        <section data-state="make-it-pop-blue">
           <h1>Medical AI</h1>
         </section>
 				<section>
@@ -28,7 +28,9 @@
           <p class="fragment custom blur">Disease-Centric Ensemble Modeling</p>
         </section>
         <section>
-          <section>Problem</section>
+          <section>
+            <h2>Problem</h2>
+          </section>
           <section>
             <h2>Predicting Binding Affinities</h2>
             <h3>Between Natural Components and K-Ras</h3>
@@ -37,7 +39,7 @@
             <div class="image-container">
                 <img src="kras.png" alt="K-Ras Image">
             </div>
-        </section>
+          </section>
           <section>
             <h3>Pancreatic Cancer</h3>
             <h4>Pancreatic ductal adenocarcinoma</h4>
@@ -46,15 +48,20 @@
             <div class="image-container">
               <img src="smile.png" alt="SMILE Image">
             </div>
-        </section>
+          </section>
           <section>Our Contribution</section>
           <section>
             <p class="fragment custom blur dataset-description">Dataset of natural compound SMILES and their affinities for K-Ras G12C</p>
             <p class="fragment custom blur training-description">Train ChemBERTa on a subset of PubChem and ZINC datasets, then fine-tune it on our collected dataset</p>
             <p class="fragment custom blur metric-description">Introducing a new ranking-based metric for evaluating models that is more intuitively related to this problem than MSE</p>
           </section>
+          <section data-state="make-it-pop-red">
+            <h2>Achieving SOTA with MSE while outperforming SOTA on the new ranking-based metric</h2>
+          </section>
           <section>
-            <h2>Achieving SOTA with MSE while outperforming SOTA on the new ranking-based metric </h2>
+            <div class="image-container" style="background-color: #ffffff; border: 3px solid #899a07;">
+              <img src="result.png" alt="Result Image">
+            </div>
           </section>
         </section>
 			</div>
