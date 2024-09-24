@@ -15,6 +15,8 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
     <link rel="stylesheet" href="css/main.css">
+
+  
 	</head>
   
 	<body>
@@ -45,7 +47,7 @@
           </section>
           <section>
             <h3>Pancreatic Cancer</h3>
-            <h4>Pancreatic ductal adenocarcinoma</h4>
+            <h4>Pancreatic ductal adenocarcinoma (PDAC)</h4>
           </section>
           <section>
             <div class="image-container">
@@ -69,8 +71,87 @@
         </section>
         <section>
           <section><h2>Disease-Centric Ensemble Modeling</h2></section>
-          <section> he</section>
+          <section>
+            <h2><p class="fragment">Key Ideas</p></h2>
+            <p class="fragment custom blur dataset-description" style="color: #0ee5f4;">Disease-Driven</p>
+            <p class="fragment custom blur training-description" style="color: #f45b0e;">Ensemble Approach for Integrating Imaging Modalities and Information</p>
+            <p class="fragment custom blur metric-description" style="color: #5a5f12;">Refining Each Model</p>
+          </section>
+          <section>
+             <h2>Disease-Driven</h2>
+             <h5> E.g., Pancreatic Cancer-PDAC</h5> 
+             <div class="image-container" style="background-color: #191919; border: 3px solid #191919; width: 700px; height: auto; padding: 10px; display: inline-block; text-align: center; border-radius: 15px;">
+              <figure style="margin: 0;">  <!-- Remove default margin -->
+                <img src="TCIA.png" alt="TCIA" style="max-width: 100%; height: auto; border: 3px solid #191919; padding: 5px; box-sizing: border-box; border-radius: 10px;">
+                <figcaption style="color: #e5f40e; margin-top: 5px;">CPTAC-PDA(TCIA)</figcaption> 
+              </figure>
+            </div>                    
+            <h5 class= "fragment" style="color: #ffffff;">Inspired by Slide2Graph</h5>
+            </section>
+            <section>
+              <h5>Ensemble Learning</h5>
+              <div class="image-container" style="border: 0; background-color: #191919; display: flex; justify-content: space-between;">
+            
+                <div class="image-box fragment" style="border: 1px solid #ccc; background-color: #000000; flex: 1; position: relative; display: flex; justify-content: center; align-items: center;">
+                  <div class="label" style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: #ffffff; z-index: 10;">
+                    MRI
+                  </div>
+                  <div class="arrow" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid transparent; z-index: 5;"></div>
+                  <figure style="margin: 0; text-align: center;">
+                    <img src="mri.png" alt="Image 1" style="max-width: 100%; height: auto;">
+                  </figure>
+                  <figure style="margin: 0; text-align: center;">
+                    <img src="mri_model.png" alt="Image 1" style="max-width: 100%; height: auto;">
+                  </figure>
+                </div>
+                <div class="image-box fragment" style="border: 1px solid #ccc; background-color: #000000; flex: 1; position: relative; display: flex; justify-content: center; align-items: center;">
+                  <div class="label" style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: #ffffff; z-index: 10;">
+                    CT
+                  </div>
+                  <div class="arrow" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid transparent; z-index: 5;"></div>
+                  <figure style="margin: 0; text-align: center;">
+                    <img src="ct.png" alt="Image 2" style="max-width: 100%; height: auto;">
+                  </figure>
+                  <figure style="margin: 0; text-align: center;">
+                    <img src="ct_model.jpg" alt="Image 2" style="max-width: 100%; height: auto;">
+                  </figure>
+                </div>
+                <div class="image-box fragment" style="border: 1px solid #ccc; background-color: #000000; flex: 1; position: relative; display: flex; justify-content: center; align-items: center;">
+                  <div class="label" style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: #ffffff; z-index: 10;">
+                    WSI
+                  </div>
+                  <div class="arrow" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid transparent; z-index: 5;"></div>
+                  <figure style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="wsi.png" alt="Image 3" style="max-width: 80%; height: auto;">
+                    <img src="pretrained.png" alt="Image 3" style="max-width: 100%; height: auto; margin-top: 10px;">
+                  </figure>
+                </div>
+                <div class="fragment">
+                  <p>...</p>
+                </div>
+                <div class="image-box fragment" style="border: 1px solid #ccc; background-color: #000000; flex: 1; position: relative; display: flex; justify-content: center; align-items: center;">
+                  <div class="label" style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); color: #ffffff; z-index: 10;">
+                    Omics
+                  </div>
+                  <div class="arrow" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 10px solid transparent; z-index: 5;"></div>
+                  <figure style="margin: 0; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <img src="omics.png" alt="Image 3" style="max-width: 120%; height: auto;">
+                    <img src="transformer.png" alt="Image 3" style="max-width: 70%; height: auto; margin-top: 0px;">
+                  </figure>
+                </div>
+              </div> 
+            </section>
+            <section>
+              <h2>Refinement</h2>
+              <p class="fragment">Enhancing Models' Performance</p>
+              <p class="fragment">E.G., Classification, Reducing Missclassified</p>
+              <p class="fragment" style="color: #f40e12;">Especially In HealthCare</p>
+              <p class="fragment" style="color: #0ee5f4;">Adaptive Boosting</p>
+            </section>                       
         </section>
+        <section data-state="make-it-pop-yellow">
+          <h1>THANK YOU</h1>
+        </section> 
 			</div>
 		</div>
     

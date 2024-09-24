@@ -25,6 +25,11 @@
   .reveal h4 {
     font-family: 'Nerko One', cursive;
   }
+
+    
+  .reveal h5 {
+    font-family: 'Nerko One', cursive;
+  }
   
 /* Style for the dataset description paragraph */
 .dataset-description {
@@ -47,6 +52,9 @@
   }
   .make-it-pop-red{
     filter: drop-shadow(0 0 20px rgb(247, 2, 51)); /* Larger shadow */
+  }
+  .make-it-pop-yellow {
+    filter: drop-shadow(0 0 20px rgb(231, 247, 2)); /* Larger shadow */
   }
 
 /* Style for the image container */
@@ -71,8 +79,6 @@
     object-fit: cover; /* Ensure the image covers the container */
     display: block; /* Remove extra space below the image */
 }
-
-
 
 
 /* Style for the glow effect on h1 within Reveal.js */
@@ -102,4 +108,32 @@
     /* Ensure the section doesn't interfere with the glow effect */
     background: none; /* Remove background if it affects visibility */
 }
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust this to slightly larger than the image width */
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc; /* Optional: Add a border around each container */
+    padding: 10px;
+    background-color: #333; /* Optional: background for the container */
+    border-radius: 8px; /* Optional: rounded corners */
+    text-align: center;
+}
+
+.image-box img {
+    width: 40000px;
+    height: auto;
+    display: block;
+}
+
+.image-box figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
 
