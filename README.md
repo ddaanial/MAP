@@ -1,1 +1,1 @@
-https://ddaanial.github.io/MRGP/
+https://ddaanial.github.io/MAP/

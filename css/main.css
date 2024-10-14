@@ -5,7 +5,7 @@
   .fragment.blur.visible {
     filter: none;
   }
-
+  
 /* Apply to all text within .reveal sections */
 .reveal {
     font-family: 'Nerko One', cursive;
